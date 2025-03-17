@@ -517,7 +517,8 @@ const plugin: JupyterFrontEndPlugin<void> = {
                         escnamestr[i-1] = colnames[i-1].replaceAll(' ','_').replaceAll('(','_')
                         .replaceAll(')','_').replaceAll('/','_').replaceAll('*','_').replaceAll('+','_')
                         .replaceAll('-','_').replaceAll('^','_').replaceAll('$','')
-                        .replaceAll('{','_').replaceAll('}','_');
+                        .replaceAll('{','_').replaceAll('}','_').replaceAll('[','_').replaceAll(']','_')
+                        .replaceAll('=','_').replaceAll('@','_').replaceAll('!','_');
                         let tempcol =[];
                         for (let k=1;k<nrows;k++){
                             classstr = '.r'+k+'.c'+i;
