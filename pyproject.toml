@@ -26,6 +26,7 @@ dependencies = [
     "notebook >=7.0.0",
     "numpy>=2.0.0",
     "pandas>=2.0.0"
+    "JPSLUtils"
 ]
 dynamic = ["version", "description", "authors", "urls", "keywords"]
 
