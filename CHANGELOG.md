@@ -1,6 +1,12 @@
 # Changelog
 
 <!-- <START NEW CHANGELOG ENTRY> -->
+## 0.8.1 (March 17, 2025)
+* BUG FIX: add stripping of `@`,`=`,`[`,`]` when choosing names for variables
+  in export to pandas.
+* added `JPSLUtils` to dependencies as it is still checked for in legacy usage. 
+  This prevents warnings when doing an import (which actually should not be 
+  necessary). Will be completely removed in the future.
 ## 0.8.0 (June 5, 2024)
 * Converted to a Jupyter Lab 4+ and notebook 7+ compatible plugin.
 * **DEPRECATION:** Input data tables created with earlier versions will not 
@@ -18,7 +24,6 @@
   consists of four lines as the html is on a single line. Still can be 
   manually collapsed.
 * Switched to Jupyter compatible BSD licensing.
-<!-- <END NEW CHANGELOG ENTRY> -->
 ## 0.7.6
 * update requirements to use upstream bug fixes.
 ## 0.7.5 
